@@ -45,6 +45,7 @@ class Model extends Eloquent
         return new HasMany($instance->newQuery(), $this, $foreignKey, $localKey);
     }
 
+
     /**
      * Replace the original hasOne function to forward the connection name.
      *
